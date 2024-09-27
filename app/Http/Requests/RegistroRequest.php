@@ -35,4 +35,17 @@ class RegistroRequest extends FormRequest
 
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'name' => 'El campo nombre es requerido',
+            'phone' => 'El campo telefono es requerido',
+            'email.required' => 'El campo email es requerido',
+            'email.email' => 'El campo email no es valido',
+            'email.unique' => 'El email ya esta en uso',
+            'password' => 'La contraseña debe tener al menos 8 caracteres, una letra, un número y un símbolo',
+
+        ];
+    }
 }
